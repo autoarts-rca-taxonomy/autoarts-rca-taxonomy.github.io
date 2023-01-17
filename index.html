@@ -1,0 +1,12 @@
+<h1>AutoARTS: Insights and Tools for Rootcausing Incidents in Microsoft Azure</h1>
+<h2>ARTS - Azure Reliability Tagging System</h2>
+<p>ARTS (Azure Reliability Tagging System) is a hierarchical taxonomy of root-cause tags used to label production incidents of Azure services. Such labelling enables aggregating rootcause categories to identify problem areas, trends, patterns, and risks that may lead to future incidents.</p>
+<p>The ARTS taxonomy is <em>comprehensive</em>---it includes many different factors contributing towards thousands of production incidents in Azure, and yet <em>compact</em> enough---it contains only the rootcauses observed in real incidents. The taxonomy has been developed over last few years and is still growing (slowly) as new rootcauses are discovered.</p>
+<p>Description of the ARTS Taxonomy:</p>
+<ul>
+<li><a href="taxonomy.html">Visualization</a>: Each node in the hierarchical taxonomy shows a rootcause category and it can be clicked to expand its sub-categories (if any). Moreover, hovering the mouse over a node shows a short description of the category.</li>
+<li><a href="taxonomy.csv">CSV File</a>: Each line contains two fields. The "TagName" field is the concise tag for a category, and the "TagDef" field briefly describes the category. Each category is hierarhical, with each level of the hierarchy seperated by a dot. For example, the tag "Architecture.ColdStart" indicates the "ColdStart" sub-category of the "Architecture" category.&nbsp;</li>
+</ul>
+<h2>Automatic labelling with ARTS</h2>
+<p>One can manually label a post-incident report (PIR) with relevant ARTS tags. However, such manual labelling does not scale well and can be inconsistence/error-prone.</p>
+<p>To address this, we have developed automated ML-based techniques to analyze the content of a PIR in order to (1) recommend ARTS tags relevant to the PIR, and (2) a small snippet of texts (from the long PIR) that capture the rootcauses explaining the recommended tags. The work is currently under submission; please email <span style="text-decoration: underline;">autoarts-rca-owner at outlook dot com</span> if you are interested in the details.</p>
