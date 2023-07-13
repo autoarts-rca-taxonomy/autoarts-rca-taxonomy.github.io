@@ -1,7 +1,8 @@
 function _1(md){return(
 md`# ARTS Taxonomy
 
-## Click on a node to expand or collapse it's sub categories of root causes.`
+## Click on a node to expand or collapse it's sub categories of root causes.
+### Hover over a node for it's description.`
 )}
 
 function _chart(d3,data,dy,margin,width,dx,tree,diagonal)
